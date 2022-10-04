@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Juego de Mokepon" />
+    <title>Mokepon</title>
+    <script src="./js/mokepon.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Mokepon 🔥💧🌱</h1>
+
+      <section id="seleccion-mokepon">
+        <h2>Elige tu Mokepon</h2>
+        <p>
+          <label for="hipodoge">Hipodoge</label>
+          <input type="radio" name="mokepones" id="hipodoge" />
+
+          <label for="capipepo">Capipepo</label>
+          <input type="radio" name="mokepones" id="capipepo" />
+
+          <label for="ratigueya">Ratigueya</label>
+          <input type="radio" name="mokepones" id="ratigueya" />
+
+          <!-- Hipodoge->Agua 
+          Capipepo->Tierra 
+          Ratigueya->Fuego 
+          Langostelvis->Agua y Fuego 
+          Tucapalma -> Agua y Tierra 
+          Pydos -> Tierra y Fuego -->
+        </p>
+
+        <button id="boton-seleccionar">Seleccionar</button>
+      </section>
+
+      <section id="ataque-mokepon">
+        <h2>Elige tu ataque</h2>
+        <p>Tu mokepon tiene <span>3</span> vidas</p>
+        <p>El mokepon enemigo tiene <span>3</span> vidas</p>
+
+        <button>Fuego 🔥</button>
+        <button>Agua 💧</button>
+        <button>Planta 🌱</button>
+      </section>
+
+      <section id="descripcion-ataque">
+        <!-- Carteles de pelea, js -->
+        <p>
+          Tu mascota ataco con FUEGO , la mascota enemiga ataco con TIERRA --
+          GANASTE 🎉
+        </p>
+      </section>
+
+      <section id="reiniciar">
+        <h2>Reiniciar partida</h2>
+        <button>Reiniciar</button>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
